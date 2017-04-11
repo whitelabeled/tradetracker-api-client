@@ -1,0 +1,20 @@
+{
+  "name": "whitelabeled/tradetracker-api-client",
+  "description": "TradeTracker API client",
+  "type": "library",
+  "require": {
+    "ext-soap": "*"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "whitelabeled\\TradeTrackerApi\\": "src"
+    }
+  },
+  "authors": [
+    {
+      "name": "Whitelabeled",
+      "email": "info@whitelabeled.nl"
+    }
+  ]
+}
