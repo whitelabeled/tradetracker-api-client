@@ -4,7 +4,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/whitelabeled/tradetracker-api-client.svg)](https://packagist.org/packages/whitelabeled/tradetracker-api-client)
 [![License](https://img.shields.io/packagist/l/whitelabeled/tradetracker-api-client.svg)](https://packagist.org/packages/whitelabeled/tradetracker-api-client)
 
-Library to retrieve sales from the TradeTracker API.
+Library to retrieve sales from the [TradeTracker](https://tradetracker.com/) API.
 This API is intended for publishers who would like to automatically import transaction data.
 
 Usage:
