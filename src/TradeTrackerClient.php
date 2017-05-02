@@ -57,8 +57,8 @@ class TradeTrackerClient {
         $transactions = [];
 
         $options = array(
-            'registrationDateFrom' => $startDate->format('Y-m-d'),
-            'registrationDateTo'   => $endDate->format('Y-m-d'),
+            'registrationDateFrom' => $startDate->format('Y-m-d 00:00:00'),
+            'registrationDateTo'   => $endDate->format('Y-m-d 23:59:59'),
         );
 
         foreach ($sites as $site) {
