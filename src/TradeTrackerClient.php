@@ -3,8 +3,8 @@
 namespace whitelabeled\TradeTrackerApi;
 
 use DateTime;
-use Httpful\Request;
 use SoapClient;
+use SoapFault;
 
 class TradeTrackerClient {
     /**
@@ -20,7 +20,7 @@ class TradeTrackerClient {
     /**
      * @var string API Endpoint
      */
-    protected $wsdl = 'http://ws.tradetracker.com/soap/affiliate?wsdl';
+    protected $wsdl = 'https://ws.tradetracker.com/soap/affiliate?wsdl';
 
     /**
      * TradeTracker API client constructor.
@@ -65,6 +65,9 @@ class TradeTrackerClient {
         return $transactions;
     }
 
+    /**
+     * @throws SoapFault
+     */
     protected function getSoapClient() {
         $client = new SoapClient($this->wsdl, array('compression' => SOAP_COMPRESSION_ACCEPT | SOAP_COMPRESSION_GZIP));
         $client->authenticate($this->customerId, $this->token);
