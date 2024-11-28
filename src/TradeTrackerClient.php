@@ -8,19 +8,14 @@ use SoapClient;
 
 class TradeTrackerClient {
     /**
-     * @var string Organization ID
+     * @var string Customer ID
      */
-    private $organizationId;
+    private $customerId;
 
     /**
      * @var string Token for reporting API
      */
     private $token;
-
-    /**
-     * @var string Currency ID
-     */
-    public $currency = 'EUR';
 
     /**
      * @var string API Endpoint
