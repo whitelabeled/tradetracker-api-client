@@ -39,7 +39,7 @@ class TradeTrackerClient {
      * @param DateTime|null $endDate   End date, optional (defaults to today)
      * @return array Transaction objects. Each part of a transaction is returned as a separate Transaction.
      */
-    public function getTransactions(DateTime $startDate, DateTime $endDate = null) {
+    public function getTransactions(DateTime $startDate, ?DateTime $endDate = null) {
         if ($endDate == null) {
             $endDate = new DateTime();
         }

@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.3
+
+* Fix PHP 8.4 deprecation: make nullable $endDate parameter explicit
+
 ## v1.0.2
 
 * Use HTTPS
